@@ -1,0 +1,66 @@
+Perk,Level,Strength,Perception,Endurance,Charisma,Intelligence,Agility,Luck,Barter,Energy Weapons,Explosives,Guns,Lockpick,Medicine,Melee Weapons,Repair,Science,Sneak,Speech,Survival,Unarmed,Description
+Retention,2,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Skill magazine bonuses last three times as long.
+"Heave, Ho!",2,5,0,0,0,0,0,0,0,0,30,0,0,0,0,0,0,0,0,0,0,Throw weapons 30% further.
+Cannibal,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Eat a corpse to regain Health.
+Intense Training,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Adds a point to any S.P.E.C.I.A.L. attribute.
+Friend of the Night,2,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,0,0,0,put the correct description here
+Lady Killer/Black Widow,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Do +10% damage to opposite sex opponents.
+Cherchez La Femme/Confirmed Bachelor,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Do +10% damage to same sex opponents.
+Swift Learner,2,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,+10% XP earned.
+Rapid Reload,2,0,0,0,0,0,5,0,0,0,0,30,0,0,0,0,0,0,0,0,0,Weapon reloads are 25% faster.
+Comprehension,4,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Double bonus from magazines, +1 from books."
+Educated,4,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,+2 skill points every level.
+Entomologist,4,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,+50% damage to mutated insects.
+Rad Child,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Increased health regeneration from radiation poisoning.
+Travel Light,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,0,Run 10% faster with light armor or no armor.
+Bloody Mess,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Do 5% extra damage, enemies explode."
+Demolition Expert,6,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,+20% damage with explosives.
+Ferocious Loyalty,6,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Companions gain DT boost when below 50% health.
+Fortune Finder,6,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,Find more bottle caps.
+Gunslinger,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Increased accuracy with one-handed weapons in V.A.T.S.
+Hand Loader,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,0,0,0,0,0,"Create hand load ammo, increased case and hull finding."
+Lead Belly,6,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Take 50% less radiation from food and water.
+Shotgun Surgeon,6,0,0,0,0,0,0,0,0,0,0,0,45,0,0,0,0,0,0,0,0,Shotguns ignore 10 points of DT.
+The Professional,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,0,0,"+20% damage with sneak attack criticals from pistols, revolvers, SMGs."
+Toughness,6,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,+3 to overall Damage Threshold.
+Strong Back,8,5,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Carry 50 more pounds of equipment.
+Super Slam,8,7,0,0,0,0,0,0,0,0,0,0,0,0,45,0,0,0,0,0,0,Melee and Unarmed attacks have a chance to knock down target.
+Rad Resistance,8,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,+25% to Radiation Resistance.
+Adamantium Skeleton,10,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Limbs take 50% less damage.
+Animal Friend,10,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Animals won't attack, at second rank they come to your aid."
+Finesse,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Higher chance to score a critical hit.
+Here and Now,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Gain an additional experience level.
+Mister Sandman,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,0,0,Silently kill sleeping humans or Ghouls for bonus XP.
+Mysterious Stranger,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,Mysterious Stranger appears occasionally in V.A.T.S. to help.
+Nerd Rage!,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,"Strength raised to 10, +15 DT when health drops below 20%."
+Night Person,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,+2 Intelligence and Perception between 6:00 PM and 6:00 AM.
+Plasma Spaz,10,0,0,0,0,0,0,0,0,0,70,0,0,0,0,0,0,0,0,0,0,AP costs for plasma weapons reduced by 20%.
+Robotics Expert,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,Do an extra 25% damage to robots.
+Math Wrath,10,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,70,0,0,0,0,Reduce all AP costs by 10%.
+Silent Running,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,Running no longer factors into detection.
+Sniper,12,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,Increased chance to hit an opponent’s head in V.A.T.S.
+Solar Powered,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Gain +2 to Strength and slowly regenerate health between 6:00 AM and 6:00 PM.
+Life Giver,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Gain an additional 30 hit points.
+Fast Metabolism,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Stimpaks heal 20% more health.
+Pyromaniac,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,+50% damage with fire-based weapons.
+Robotics Expert,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,Do an extra 25% damage to robots.
+Light Step,14,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,No longer set off traps.
+Purifier,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,+50% damage to abominations.
+Jury Rigging,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,0,0,0,0,0,Repair items using a roughly similar item.
+Better Criticals,16,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Critical hits do 50% more damage.
+Action Boy,16,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Gain an additional 15 Action Points.
+Chem Resistant,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50% less likely to become addicted to chems.
+Meltdown,16,0,0,0,0,0,0,0,0,0,90,0,0,0,0,0,0,0,0,0,0,Energy weapons emit a destructive plasma burst on death.
+Weapon Handling,16,3,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,Weapon Strength requirements are 2 points lower than normal.
+Center of Mass,18,0,0,0,0,0,0,0,0,0,0,0,70,0,0,0,0,0,0,0,0,+15% damage when targeting the torso in V.A.T.S.
+Spray and Pray,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,Your attacks do much less damage to companions.
+Paralyzing Palm,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,Perform an Unarmed power attack while in V.A.T.S. to paralyze your opponent for 30 seconds.
+Infiltrator,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,0,0,"Force locks on average, hard, and very hard locks a second time."
+Computer Whiz,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,0,0,0,0,Hack any computer a second time after failing.
+Grim Reapers Sprint,20,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Killing an enemy in V.A.T.S. regenerates 20 Action Points.
+Explorer,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Reveals all locations on the map.
+Slayer,24,7,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,90,The speed of all your melee and unarmed attacks is increased by 30%.
+Nerves of Steel,26,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Regenerate Action Points more quickly.
+Rad Absorption,28,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Radiation level decreases over time.
+Nuka Chemist,22,,,,,,,,,,,,,,,,90,,,,,Unlocks special Nuka-Cola recipes at the workbench.
+Laser Commander,22,,,,,,,,,90,,,,,,,,,,,,You do an extra 15% damage and have a 10% extra chance to critically hit with any laser weapon.

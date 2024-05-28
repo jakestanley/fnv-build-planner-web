@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Character Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>FNV Character Builder</h1>
+    <form id="character-form">
+        <label for="character_name">Character Name:</label>
+        <input type="text" id="character_name" name="character_name" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="gender_male" name="character_gender" value="male" checked required>
+        <label for="gender_male">Male</label>
+        <input type="radio" id="gender_female" name="character_gender" value="female" required>
+        <label for="gender_female">Female</label><br>
+
+        <h2>Perks</h2>
+        <div id="perks-container"></div>
+
+        <input type="submit" value="Create Character">
+    </form>
+
+    <button id="export-json">Export to JSON</button>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
