@@ -21,20 +21,36 @@ function sortPerks(perks) {
 /**
  * 
  * @param {*} perk 
- * @returns string representation of all non-zero requirements
+ * @returns get all non-zero perk requirements
  */
 function getPerkRequirements(perk) {
-    console.debug(perk);
-    let requirements = [];
+    console.debug(perk); // TODO: unit test
+    let requirements = new Map();
     for (const [key, value] of Object.entries(perk)) {
-        if (key == "Perk" || key == "Description" || key == "Level") continue;
+        if (key == "Perk" || key == "Description") continue;
         if (isNaN(parseInt(value)) && value.length > 0) {
-            requirements.push(`${key}: ${value}`);
+            requirements.set(key, value);
         } else if (intOf(value) > 0) {
-            requirements.push(`${key}: ${value}`);
+            requirements.set(key, value);
         }
     }
-    return requirements.join("<br>");
+    return requirements;
 }
 
-export { parseCSV, intOf, sortPerks, getPerkRequirements };
+/**
+ * 
+ * @param {*} perk 
+ * @returns get all non-zero perk requirements as a string
+ */
+function getPerkRequirementsString(perk) {
+    let requirements = getPerkRequirements(perk);
+    let requirementsStringArray = [];
+    requirements.forEach((value, key) => {
+        requirementsStringArray.push(`${key}: ${value}`)
+    });
+    return requirementsStringArray.join("<br>");
+}
+
+
+
+export { parseCSV, intOf, sortPerks, getPerkRequirements, getPerkRequirementsString };

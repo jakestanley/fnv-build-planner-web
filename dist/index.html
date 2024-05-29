@@ -9,6 +9,8 @@
 <body>
     <h1>FNV Character Builder</h1>
     <form id="character-form">
+
+        <h2>Basics</h2>
         <label for="character_name">Character Name:</label>
         <input type="text" id="character_name" name="character_name" required><br>
 
@@ -17,6 +19,108 @@
         <label for="gender_male">Male</label>
         <input type="radio" id="gender_female" name="character_gender" value="female" required>
         <label for="gender_female">Female</label><br>
+
+        <h2>S.P.E.C.I.A.L</h2>
+        <div id="special-container">
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>Stat</th>
+                    <th>Value</th>
+                    <th>Required</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Strength</td>
+                    <td>
+                        <input type="number" id="c_strength" name="c_strength" value="5" min="1", max="10"/>
+                    </td>
+                    <td>
+                        <input type="number" id="r_strength" name="r_strength" value="1" min="1", max="10" disabled/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Perception</td>
+                    <td>
+                        <input type="number" id="c_perception" name="c_perception" value="5" min="1", max="10"/>
+                    </td>
+                    <td>
+                        <input type="number" id="r_perception" name="r_perception" value="1" min="1", max="10" disabled/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Endurance</td>
+                    <td>
+                        <input type="number" id="c_endurance" name="c_endurance" value="5" min="1", max="10"/>
+                    </td>
+                    <td>
+                        <input type="number" id="r_endurance" name="r_endurance" value="1" min="1", max="10" disabled/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Charisma</td>
+                    <td>
+                        <input type="number" id="c_charisma" name="c_charisma" value="5" min="1", max="10"/>
+                    </td>
+                    <td>
+                        <input type="number" id="r_charisma" name="r_charisma" value="1" min="1", max="10" disabled/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Intelligence</td>
+                    <td>
+                        <input type="number" id="c_intelligence" name="c_intelligence" value="5" min="1", max="10"/>
+                    </td>
+                    <td>
+                        <input type="number" id="r_intelligence" name="r_intelligence" value="1" min="1", max="10" disabled/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agility</td>
+                    <td>
+                        <input type="number" id="c_agility" name="c_agility" value="5" min="1", max="10"/>
+                    </td>
+                    <td>
+                        <input type="number" id="r_agility" name="r_agility" value="1" min="1", max="10" disabled/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Luck</td>
+                    <td>
+                        <input type="number" id="c_luck" name="c_luck" value="5" min="1", max="10"/>
+                    </td>
+                    <td>
+                        <input type="number" id="r_luck" name="c_luck" value="1" min="1", max="10" disabled/>
+                    </td>
+                    
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Available</th>
+                    <td>
+                        <input type="number" id="points_available" name="points_available" value="0" min="0" max="35" disabled/>
+                    </td>
+                </tr>
+            </tfoot>
+                
+            </table>
+        </div>
+
+        <h2>Skills</h2>
+        <div id="skills-container">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Required</th>
+                    </tr>
+                </thead>
+                <tbody id="skills-body">
+                </tbody>
+            </table>
+        </div>
 
         <h2>Perks</h2>
         <div id="perks-container"></div>

@@ -8,6 +8,12 @@ I have a bunch of ideas for roleplay character builds in New Vegas but I haven't
 
 # Roadmap
 
+## Plan
+
+- Add selected perks to character object
+
+## Features
+
 - Automatically set required skills and stats
 - Progression plan; what skills to invest in at each level and order in which to take perks
 - Option to select implants and other SPECIAL perks

@@ -1,8 +1,12 @@
-import { parseCSV, sortPerks, getPerkRequirements } from './functions';
+import { parseCSV, sortPerks, getPerkRequirements, getPerkRequirementsString } from './functions';
 import CryptoJS from 'crypto-js';
 
 document.addEventListener('DOMContentLoaded', () => {
     let idPerksMap = new Map();
+    let character = {
+        perks: new Set()
+    };
+
     const perksContainer = document.getElementById('perks-container');
 
     // Function to fetch and parse the CSV file
@@ -75,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const reqsCell = document.createElement('td');
-            const requirements = getPerkRequirements(perk);
+            const requirements = getPerkRequirementsString(perk);
             // because it has brs in it
             reqsCell.innerHTML = requirements;
             row.appendChild(reqsCell);
@@ -87,19 +91,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
             checkboxCell.appendChild(checkbox);
             checkboxCell.appendChild(label);
-            checkbox.addEventListener('change', (event) => {
-                // Handle the change event
-                const target = event.target;
-                console.log(`Checkbox with value ${idPerksMap.get(target.value).Perk} is now ${target.checked ? 'checked' : 'unchecked'}`);
-                // TODO: updateRequirements()
-                // updateRequirements();
-            });
+            checkbox.addEventListener('change', handlePerkSelection);
             
 
             table.appendChild(row);
         });
 
         perksContainer.appendChild(table);
+    };
+
+    const updateRequirements = () => {
+
+        let requirementsMap = new Map();
+
+        character.perks.forEach(perkId => {
+            const perk = idPerksMap.get(perkId);
+            const requirements = getPerkRequirements(perk);
+            requirements.forEach((value, key) => {
+                if (!requirementsMap.has(key)) {
+                    if (!isNaN(value)) {
+                        requirementsMap.set(key, parseInt(value));
+                    } else {
+                        requirementsMap.set(key, value);
+                    }
+                } else {
+                    if(!isNaN(value)) {
+                        if (requirementsMap.get(key) <= parseInt(value)) {
+                            requirementsMap.set(key, value);
+                        }
+                    } else {
+                        // replaces, should probably append
+                        requirementsMap.set(key, value);
+                    }
+                }
+            });
+        });
+
+        let tbody = document.getElementById('skills-body');
+        tbody.innerHTML = '';
+        requirementsMap.forEach((value, key) => {
+            let row = document.createElement('tr');
+            let cell = document.createElement('td');
+            cell.textContent = key
+            row.appendChild(cell);
+            cell = document.createElement('td');
+            cell.textContent = value
+            row.appendChild(cell);
+            tbody.appendChild(row)
+        });
+    };
+
+    const handlePerkSelection = (event) => {
+        // Handle the change event
+        const target = event.target;
+        if (target.checked) {
+            character.perks.add(target.value);
+        } else {
+            character.perks.delete(target.value);
+        }
+        console.log(`Checkbox with value ${idPerksMap.get(target.value).Perk} is now ${target.checked ? 'checked' : 'unchecked'}`);
+        // TODO: updateRequirements()
+        updateRequirements();
     };
 
     // listener functions
