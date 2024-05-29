@@ -18,13 +18,15 @@ function sortPerks(perks) {
     console.log("sorting done")
 }
 
+const SPECIAL = ['Strength', 'Perception', 'Endurance', 'Charisma', 'Intelligence', 'Agility', 'Luck'];
+
 /**
  * 
  * @param {*} perk 
  * @returns get all non-zero perk requirements
  */
 function getPerkRequirements(perk) {
-    console.debug(perk); // TODO: unit test
+    // console.debug(perk); // TODO: unit test
     let requirements = new Map();
     for (const [key, value] of Object.entries(perk)) {
         if (key == "Perk" || key == "Description") continue;
@@ -53,4 +55,4 @@ function getPerkRequirementsString(perk) {
 
 
 
-export { parseCSV, intOf, sortPerks, getPerkRequirements, getPerkRequirementsString };
+export { parseCSV, intOf, sortPerks, getPerkRequirements, getPerkRequirementsString, SPECIAL };

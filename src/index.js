@@ -1,4 +1,4 @@
-import { parseCSV, sortPerks, getPerkRequirements, getPerkRequirementsString } from './functions';
+import { parseCSV, sortPerks, getPerkRequirements, getPerkRequirementsString, SPECIAL } from './functions';
 import CryptoJS from 'crypto-js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -6,6 +6,36 @@ document.addEventListener('DOMContentLoaded', () => {
     let character = {
         perks: new Set()
     };
+
+    const specialTable = document.getElementById('special-body');
+    SPECIAL.forEach(special => {
+        const row = document.createElement('tr');
+
+        const nameCell = document.createElement('td');
+        nameCell.textContent = special;
+        row.appendChild(nameCell);
+
+        const inputCell = document.createElement('td');
+        const input = document.createElement('input');
+        input.className = 'specials';
+        input.type = 'number';
+        input.id = `c_${special}`;
+        input.name = `c_${special}`;
+        input.value = '5';
+        input.min = '1';
+        input.max = '10';
+        inputCell.appendChild(input);
+        row.appendChild(inputCell);
+
+        const requiredCell = document.createElement('td');
+        requiredCell.textContent = '1';
+        requiredCell.id = `r_${special}`;
+        requiredCell.className = `required_specials`;
+        row.appendChild(requiredCell);
+
+        specialTable.appendChild(row);
+    });
+    
 
     const perksContainer = document.getElementById('perks-container');
 
@@ -127,17 +157,27 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
+        let special_requirements = document.getElementsByClassName('required_specials');
+        Array.from(special_requirements).forEach(special => {
+            special.textContent = 1;
+        })
+
         let tbody = document.getElementById('skills-body');
         tbody.innerHTML = '';
         requirementsMap.forEach((value, key) => {
-            let row = document.createElement('tr');
-            let cell = document.createElement('td');
-            cell.textContent = key
-            row.appendChild(cell);
-            cell = document.createElement('td');
-            cell.textContent = value
-            row.appendChild(cell);
-            tbody.appendChild(row)
+            if (SPECIAL.includes(key)) {
+                document.getElementById(`r_${key}`).textContent = value;
+            } else {
+                let row = document.createElement('tr');
+                let cell = document.createElement('td');
+                cell.textContent = key
+                row.appendChild(cell);
+                cell = document.createElement('td');
+                cell.textContent = value
+                row.appendChild(cell);
+                tbody.appendChild(row)
+            }
+            
         });
     };
 
